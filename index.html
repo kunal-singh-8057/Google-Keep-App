@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div>
+        <i class="fa-solid fa-book fa-2x"></i>
+        <h4 class="logo">Google Keeps</h4>
+    </div>
+
+    <div class="container" id="text">
+        <input type="text" placeholder="Enter Text here" class="search" id="search">
+        <i class="fa-solid fa-trash" style="color: black; margin-left:-5%;"></i>
+    </div>
+
+<div class="container2">
+    <i class="fa-solid fa-plus fa-2x" style="color: white; margin-left: 22%; margin-top: 19%;" onclick="myfun()" ></i>
+</div>
+
+<div id="con3" class="con3" id="con3">
+    <i class="fa-solid fa-trash" style="color: black; margin-left:12%; position: absolute; margin-top: 5%;" onclick="r()"></i>
+    <input type="text" class="s2" placeholder="enter text here">
+</div>
+
+</header>
+
+
+<script>
+const search = document.getElementById('search');
+let popup = document.getElementById('con3')
+
+
+function myfun()
+{
+if(search.value==='')
+{
+    alert('plz enter someting in the givenbox');
+}
+
+else
+{
+ popup.classList.add('popup');
+}
+
+}
+
+
+function r()
+{
+    popup.classList.add('close');
+}
+
+
+</script>
+
+</body>
+</html>
